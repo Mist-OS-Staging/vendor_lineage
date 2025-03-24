@@ -289,16 +289,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     pm.dexopt.downgrade_after_inactive_days=10 \
     dalvik.vm.madvise-random=true
 
-# lmk
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.lmk.critical_upgrade=true \
-    ro.lmk.upgrade_pressure=40 \
-    ro.lmk.downgrade_pressure=60 \
-    ro.lmk.kill_heaviest_task=true \
-    ro.lmk.medium=701
-
-## Art
-
 # Always preopt extracted APKs to prevent extracting out of the APK for gms
 # modules.
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
